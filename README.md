@@ -5,7 +5,7 @@ generated and refreshed by machine; do not edit its contents by hand.
 
 ## What is here
 
-Source: `audio/** on the EN game server, excluding every voice set`.
+Source: `audio/**` on the EN game server, excluding every voice set.
 
 Grouped by the game's own layout:
 
@@ -34,8 +34,8 @@ Run it locally:
 
 ```bash
 python -m pip install "arkprts[all]" lameenc
-python tools/assets_sync.py --out . --state .state
-python tools/assets_sync.py --verify --out .
+python tools/assets_sync.py --out . --flat --state .state
+python tools/assets_sync.py --verify --out . --flat
 ```
 
 `tools/assets_sync.py` in this repository is a self-contained copy whose default group is
